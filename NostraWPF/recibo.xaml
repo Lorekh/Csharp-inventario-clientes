@@ -1,0 +1,27 @@
+﻿<Window x:Class="NostraWPF.recibo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NostraWPF"
+        mc:Ignorable="d"
+        Title="recibo" Height="290" Width="540" MinWidth="540" MinHeight="290" HorizontalContentAlignment="Stretch" MaxWidth="540" MaxHeight="290" WindowStyle="None" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Background="LightGray">
+    <Grid>
+        <Label x:Name="label" Content="Cliente:" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="49"/>
+        <ComboBox x:Name="cbBoxClientes" Loaded="ComboBox_Load" HorizontalAlignment="Left" Margin="59,67,0,0" VerticalAlignment="Top" Width="174" ItemsSource="{Binding}"/>
+        <Label x:Name="label1" Content="Marca:" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top" Width="49"/>
+        <TextBox x:Name="textBoxMarca" HorizontalAlignment="Left" Height="23" Margin="59,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="label1_Copy" Content="Modelo:" HorizontalAlignment="Left" Margin="5,169,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.5,1.115"/>
+        <TextBox x:Name="textBoxModelo" HorizontalAlignment="Left" Height="23" Margin="59,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="labelFecha" Content="Fecha" HorizontalAlignment="Left" Margin="428,63,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="label1_Copy1" Content="Serial:" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="49"/>
+        <TextBox x:Name="textBoxSerial" HorizontalAlignment="Left" Height="23" Margin="59,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="label3" Content="Descripcion:" HorizontalAlignment="Left" Margin="256,105,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBox x:Name="textBoxDescripcion" HorizontalAlignment="Left" Height="90" Margin="256,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257"/>
+        <Button x:Name="buttonAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="455,248,0,0" VerticalAlignment="Top" Width="75" Height="32" Click="buttonAgregar_Click"/>
+        <Button x:Name="buttonCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="75" Click="buttonCancelar_Click"/>
+        <Label x:Name="label4" Content="Nuevo Recibo" HorizontalAlignment="Left" Margin="206,10,0,0" VerticalAlignment="Top" Width="128" FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="labelFecha_Copy" Content="Fecha:" HorizontalAlignment="Left" Margin="379,63,0,0" VerticalAlignment="Top" Width="44"/>
+
+    </Grid>
+</Window>
